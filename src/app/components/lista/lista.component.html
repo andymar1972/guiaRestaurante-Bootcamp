@@ -1,0 +1,20 @@
+<div class="table100 mb-4">
+  <app-form
+    (salidaRestaurante)="agregarRestaurante($event)"
+    (salidaCiudad)="agregarCiudad($event)"
+  ></app-form>
+</div>
+<div class="table100">
+  <table>
+    <thead>
+      <tr class="table100-head">
+        <th class="column1">Restaurante</th>
+        <th class="column2">Ciudad</th>
+      </tr>
+    </thead>
+    <app-lista-body
+      [ciudades]="ciudades"
+      [restaurantes]="restaurantes"
+    ></app-lista-body>
+  </table>
+</div>

@@ -1,0 +1,29 @@
+<form #forma="ngForm" (ngSubmit)="guardar(forma)">
+  <div class="row">
+    <div class="col">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Nombre del restaurante"
+        [(ngModel)]="restaurante"
+        #restauranteForm="ngModel"
+        name="restaurante"
+        required
+      />
+    </div>
+    <div class="col">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Ciudad"
+        [(ngModel)]="ciudad"
+        #ciudadForm="ngModel"
+        name="ciudad"
+        required
+      />
+    </div>
+    <div class="col">
+      <button class="btn btn-info" type="submit">Agregar</button>
+    </div>
+  </div>
+</form>
